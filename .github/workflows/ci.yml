@@ -25,6 +25,7 @@ jobs:
 
       - run: yarn install
       - run: yarn run build
+      - run: yarn run deploy
       - run: git config user.name "兰鑫"
       - run: git config user.email "1192065030@qq.com"
       - run: yarn run gh-pages
