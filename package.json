@@ -7,7 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "gh-pages": "gh-pages -d public"
+    "gh-pages": "gh-pages -d public -u 'git@github.com:cuilanxin/cuilanxin.github.io.git'"
   },
   "hexo": {
     "version": "5.4.0"
