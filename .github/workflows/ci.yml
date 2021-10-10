@@ -26,8 +26,6 @@ jobs:
       - run: yarn install
       - run: yarn run build
       - run: yarn run deploy
-      - run: git config user.name "兰鑫"
-      - run: git config user.email "1192065030@qq.com"
       - run: |
     git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
     npx gh-pages -d public -u "github-actions-bot <support+actions@github.com>"
