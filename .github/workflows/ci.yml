@@ -31,7 +31,7 @@ jobs:
       # - run: yarn run gh-pages
       - name: Deploy with gh-pages
         run: |
-          git remote set-url origin git@github.com:cuilanxin/cuilanxin.github.io.git
+          git remote set-url origin https://cuilanxin.github.io/
           npx gh-pages -d build -u "兰鑫 <1192065030@qq.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
