@@ -3,36 +3,73 @@ title: Hello World
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+## 终端翻墙
 
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
+### 1.privoxy 安装
 
 ``` bash
-$ hexo server
+$ brew install privoxy
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
 
-### Generate static files
+### 2.privoxy 配置
+
+打开配置文件 /usr/local/etc/privoxy/config ：
+加入下面两项配置：
 
 ``` bash
-$ hexo generate
+$ listen-address 0.0.0.0:8118
+$ forward-socks5 / localhost:1086 .
 ```
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+> - 第一行设置 privoxy 监听任意IP地址的8118端口。
+> - 第二行设置本地socks5代理客户端端口。
+> - 注意不要忘了最后有一个空格和点号。
 
-### Deploy to remote sites
+
+### 3.启动 privoxy
 
 ``` bash
-$ hexo deploy
+$ sudo /usr/local/sbin/privoxy /usr/local/etc/privoxy/config
 ```
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
+### 4.查看是否启动成功
+
+``` bash
+$ netstat -na | grep 8118
+```
+
+### 5.privoxy 使用
+
+在命令行终端输入如下命令，该终端即可翻墙：
+
+``` bash
+$ export http_proxy='http://localhost:8118'
+$ export https_proxy='http://localhost:8118'
+```
+
+原理是将 socks5 代理转化成 http 代理给命令行终端使用。
+如果不想使用了取消即可。
+
+```bash
+$ unset http_proxy
+$ unset https_proxy
+```
+
+### 6.小技巧
+
+如果关闭了终端，功能就会失效，如果需要代理一直生效，则可以把上述两行代码添加到 ~/.bash_profile 文件最后。
+
+function proxy_off(){
+    unset http_proxy
+    unset https_proxy
+    echo -e "已关闭代理"
+}
+
+function proxy_on() {
+    export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+    export http_proxy="http://127.0.0.1:8118"
+    export https_proxy=$http_proxy
+    echo -e "已开启代理"
+}
