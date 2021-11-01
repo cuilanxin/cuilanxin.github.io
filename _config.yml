@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 俊小伙
-subtitle: 起点低,当下净,回头脏,平常道
-description: 起点低,当下净,回头脏,平常道......
-keywords: 俊小伙的博客,cuilanxin,鸭子嘎嘎叫,鸭子嘎嘎叫的博客,https://cuilanxin.github.io,https://cuilanxin.github.io/
-author: 俊小伙
-language: en
+title: 杂记
+subtitle: 牢记使命，不忘初心
+description: 记录一些有必要记录的小事情，方便自己查阅，观看需谨慎。
+keywords: 崔兰鑫, 兰鑫, 崔兰心, 兰心, 杂记, cuilanxin, lanxin
+author: 崔兰鑫
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
@@ -44,7 +44,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: wind
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
