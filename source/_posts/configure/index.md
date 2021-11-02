@@ -1,7 +1,7 @@
 ---
 uuid: 3a26c314-2f0d-21b2-f54c-3cf9fee39e3e
-title: Hello World11
-categories: abc
+title: 配置终端翻墙
+categories: configure
 ---
 配置终端翻墙
 
