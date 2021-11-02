@@ -25,7 +25,7 @@
 <% } %>
 <% page.posts.each(function (post) { %>
   <article class="mdui-card mdui-m-b-5 mdui-hoverable">
-    <a style='text-decoration:none;color: #000' id="clxabiaoqian" href="<%- url_for(post.link || post.path) %>"<% if (post.link) { %> target="_blank"<% } %>>
+    <a style='text-decoration:none;color: #000' class="clxabiaoqian" href="<%- url_for(post.link || post.path) %>"<% if (post.link) { %> target="_blank"<% } %>>
       <div class="mdui-card-clx">
         <div class="mdui-card-clx-left"><%= post.title %></div>
         <div class="mdui-card-clx-left-1"><i class="iconfont">&#xe697;</i> <%- date(post.date) %></div>
