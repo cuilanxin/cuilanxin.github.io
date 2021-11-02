@@ -37,14 +37,14 @@ analytics:
   baidu_site_id:
   cnzz_site_id:
 
-pages:
-- name: 时间轴
-  link: /timeline
-- name: 标签云
-  link: /tagcloud
-- name: 相册
-  link: /gallery
-links:
+# pages:
+# - name: 时间轴
+#   link: /timeline
+# - name: 标签云
+#   link: /tagcloud
+# - name: 相册
+#   link: /gallery
+# links:
 
 since:
 footer_text:
