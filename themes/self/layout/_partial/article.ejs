@@ -63,7 +63,9 @@
           <div class="mdui-card-primary-subtitle"><i class="iconfont">&#xe697;</i> <%- date(page.date) %> / <i class="iconfont">&#xe601;</i> <%= page.author || config.author %><% if (theme.busuanzi.page) { %> &nbsp;&nbsp; <span id="busuanzi_container_page_pv" style="display: none;"><i class="iconfont">&#xe7fd;</i> <span id="busuanzi_value_page_pv"></span></span><% } %></div>
         </div>
       </div>
-      <div class="mdui-card-menu">
+      <div id="clx-lizhi" style="width: 100%; color: #fff;font-size: 16px;position: absolute; top: 20%;text-align: center;"></div>
+      <!-- <div class="mdui-card-menu">
+        分享
         <% if (page.qrcode !== false) { %>
           <button class="mdui-btn mdui-btn-icon mdui-text-color-white" mdui-menu="{target: '#qrcode', align: 'right'}"><i class="mdui-icon material-icons">devices</i></button>
           <ul class="mdui-menu" id="qrcode">
@@ -105,7 +107,7 @@
             </li>
           </ul>
         <% } %>
-      </div>
+      </div> -->
     </header>
     <div class="mdui-card-content mdui-typo">
       <%- page.content %>

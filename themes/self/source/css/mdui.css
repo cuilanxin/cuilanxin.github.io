@@ -876,8 +876,8 @@ body.mdui-locked {
   color: #ffffff !important;
 }
 .mdui-theme-primary-indigo .mdui-color-theme {
-  background-color: #3F51B5 !important;
-  color: #ffffff !important;
+  background-color: #fff !important;
+  color: #333 !important;
 }
 .mdui-theme-primary-indigo .mdui-color-theme-50 {
   background-color: #E8EAF6 !important;
@@ -10834,37 +10834,7 @@ select.mdui-select[multiple] option:last-child {
   font-weight: 400;
   opacity: 0.6;
 }
-/* 卡片头部头像 */
-.mdui-card-header-avatar {
-  float: left;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-/* 卡片头部标题 */
-.mdui-card-header-title {
-  display: block;
-  margin-left: 52px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  opacity: 0.87;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-/* 卡片头部副标题 */
-.mdui-card-header-subtitle {
-  display: block;
-  margin-left: 52px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  opacity: 0.54;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+
 /**
  * =========================== 主标题区域
  */

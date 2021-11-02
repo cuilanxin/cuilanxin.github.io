@@ -5,9 +5,9 @@ theme_color:
 notice:
 
 favicon: /images/favicon.png
-banner: /images/banner.png
-avatar: /images/avatar.png
-rss: /atom.xml
+banner: /images/banner.jpeg
+avatar: /images/favicon.png
+# rss: /atom.xml
 
 email:
 sns:
