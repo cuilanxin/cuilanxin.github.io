@@ -29,7 +29,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 search:
-  placeholder: 请输入关键字11
+  placeholder: 请输入关键字
   path: /search.xml
   use: plugin
   # limit: 10000

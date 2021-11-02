@@ -1,8 +1,9 @@
 ---
-uuid: e3eb464a-eb65-831d-b4f0-21b1be8594bd
+uuid: 3a26c314-2f0d-21b2-f54c-3cf9fee39e3e
 title: Hello World11
+categories: abc
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+配置终端翻墙
 
 ## 终端翻墙
 
