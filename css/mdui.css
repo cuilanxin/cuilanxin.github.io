@@ -10974,7 +10974,7 @@ select.mdui-select[multiple] option:last-child {
  */
 .mdui-theme-layout-dark .mdui-card {
   color: #fff;
-  background-color: #424242;
+  background-color: #111;
 }
 @media (prefers-color-scheme: dark) {
   .mdui-theme-layout-auto .mdui-card {
