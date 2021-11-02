@@ -4,9 +4,28 @@
   
     
     <entry>
+      <title>科学上网</title>
+      <link href="/2021/11/02/configure/proxy/"/>
+      <url>/2021/11/02/configure/proxy/</url>
+      
+        <content type="html"><![CDATA[<p>配置科学上网 mac 版</p><h2 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h2><h3 id="1-vultr-购买一个服务器"><a href="#1-vultr-购买一个服务器" class="headerlink" title="1.vultr 购买一个服务器"></a>1.vultr 购买一个服务器</h3><p><a href="https://www.vultr.com/">vultr 官网</a></p><ol><li>注册账号</li><li>登录激活账号</li><li>账号充值<br> -. 在页面 Billing </li><li>新建vps服务器</li><li>尽量选择 CentOS 7 X64 因为网上教程多</li><li>点击 Deploy Now</li><li>部署服务器，就是看这个服务器是不是 Running 不是的话点一下</li><li>记下服务器的详细信息 服务器IP、用户名和密码</li></ol><h3 id="2-连接服务器"><a href="#2-连接服务器" class="headerlink" title="2.连接服务器"></a>2.连接服务器</h3><pre><code class="bash">$ ssh root@服务器IP$ # 输入密码</code></pre><h3 id="3-配置ssr"><a href="#3-配置ssr" class="headerlink" title="3.配置ssr"></a>3.配置ssr</h3><p>在进入服务器的终端界面</p><h4 id="1-安装wget"><a href="#1-安装wget" class="headerlink" title="1.安装wget"></a>1.安装wget</h4><pre><code class="bash">$ yum -y install wget</code></pre><h4 id="2-安装ssr"><a href="#2-安装ssr" class="headerlink" title="2.安装ssr"></a>2.安装ssr</h4><pre><code class="bash">$ wget https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh &amp;&amp; chmod x ssr.sh &amp;&amp; bash ssr.sh</code></pre><h4 id="3-配置-ssr"><a href="#3-配置-ssr" class="headerlink" title="3.配置 ssr"></a>3.配置 ssr</h4><ol><li>安装</li><li>都是中文不多说了 不知道就默认</li><li>安装好后 要记一下配置信息<pre><code class="bash">$ bash ssr.sh</code></pre></li></ol><h3 id="4-使用-Google-加速"><a href="#4-使用-Google-加速" class="headerlink" title="4.使用 Google 加速"></a>4.使用 Google 加速</h3><pre><code class="bash">$ yum -y install wget$ wget –no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh$ chmod +x bbr.sh$ ./bbr.sh</code></pre><h3 id="5-下载-ssr-软件"><a href="#5-下载-ssr-软件" class="headerlink" title="5.下载 ssr 软件"></a>5.下载 ssr 软件</h3><p>按照步骤填写服务器信息，就是刚才在买的服务器中搭建的ssr的配置<br><a href="https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases">mac ssr</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> configure </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>配置终端翻墙</title>
-      <link href="/2021/11/02/configure/index/"/>
-      <url>/2021/11/02/configure/index/</url>
+      <link href="/2021/11/02/configure/term-Proxy/"/>
+      <url>/2021/11/02/configure/term-Proxy/</url>
       
         <content type="html"><![CDATA[<p>配置终端翻墙</p><h2 id="终端翻墙"><a href="#终端翻墙" class="headerlink" title="终端翻墙"></a>终端翻墙</h2><h3 id="1-privoxy-安装"><a href="#1-privoxy-安装" class="headerlink" title="1.privoxy 安装"></a>1.privoxy 安装</h3><pre><code class="bash">$ brew install privoxy</code></pre><h3 id="2-privoxy-配置"><a href="#2-privoxy-配置" class="headerlink" title="2.privoxy 配置"></a>2.privoxy 配置</h3><p>打开配置文件 /usr/local/etc/privoxy/config ：<br>加入下面两项配置：</p><pre><code class="bash">$ listen-address 0.0.0.0:8118$ forward-socks5 / localhost:1086 .</code></pre><blockquote><ul><li>第一行设置 privoxy 监听任意IP地址的8118端口。</li><li>第二行设置本地socks5代理客户端端口。</li><li>注意不要忘了最后有一个空格和点号。</li></ul></blockquote><h3 id="3-启动-privoxy"><a href="#3-启动-privoxy" class="headerlink" title="3.启动 privoxy"></a>3.启动 privoxy</h3><pre><code class="bash">$ sudo /usr/local/sbin/privoxy /usr/local/etc/privoxy/config</code></pre><h3 id="4-查看是否启动成功"><a href="#4-查看是否启动成功" class="headerlink" title="4.查看是否启动成功"></a>4.查看是否启动成功</h3><pre><code class="bash">$ netstat -na | grep 8118</code></pre><h3 id="5-privoxy-使用"><a href="#5-privoxy-使用" class="headerlink" title="5.privoxy 使用"></a>5.privoxy 使用</h3><p>在命令行终端输入如下命令，该终端即可翻墙：</p><pre><code class="bash">$ export http_proxy=&#39;http://localhost:8118&#39;$ export https_proxy=&#39;http://localhost:8118&#39;</code></pre><p>原理是将 socks5 代理转化成 http 代理给命令行终端使用。<br>如果不想使用了取消即可。</p><pre><code class="bash">$ unset http_proxy$ unset https_proxy</code></pre><h3 id="6-小技巧"><a href="#6-小技巧" class="headerlink" title="6.小技巧"></a>6.小技巧</h3><p>如果关闭了终端，功能就会失效，如果需要代理一直生效，则可以把上述两行代码添加到 ~/.bash_profile 文件最后。</p><pre><code class="bash">function proxy_off()&#123;    unset http_proxy    unset https_proxy    echo -e &quot;已关闭代理&quot;&#125;function proxy_on() &#123;    export no_proxy=&quot;localhost,127.0.0.1,localaddress,.localdomain.com&quot;    export http_proxy=&quot;http://127.0.0.1:8118&quot;    export https_proxy=$http_proxy    echo -e &quot;已开启代理&quot;&#125;</code></pre>]]></content>
       
