@@ -63,6 +63,7 @@ $ unset https_proxy
 
 如果关闭了终端，功能就会失效，如果需要代理一直生效，则可以把上述两行代码添加到 ~/.bash_profile 文件最后。
 
+```bash
 function proxy_off(){
     unset http_proxy
     unset https_proxy
@@ -75,3 +76,4 @@ function proxy_on() {
     export https_proxy=$http_proxy
     echo -e "已开启代理"
 }
+```
