@@ -32,18 +32,18 @@ $ # 输入密码
 
 在进入服务器的终端界面
 
-#### 1.安装wget
+**1.安装wget**
 
 ```bash
 $ yum -y install wget
 ```
 
-#### 2.安装ssr
+**2.安装ssr**
 
 ```bash
 $ wget https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod x ssr.sh && bash ssr.sh
 ``` 
-#### 3.配置 ssr
+**3.配置 ssr** 
 
 1. 安装
 2. 都是中文不多说了 不知道就默认
