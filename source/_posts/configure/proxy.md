@@ -48,6 +48,7 @@ $ wget https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmo
 1. 安装
 2. 都是中文不多说了 不知道就默认
 3. 安装好后 要记一下配置信息
+
 ```bash
 $ bash ssr.sh
 ```
