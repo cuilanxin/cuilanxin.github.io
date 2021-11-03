@@ -42,25 +42,6 @@
     
     
     <entry>
-      <title>研究</title>
-      <link href="/2021/11/03/research/index/"/>
-      <url>/2021/11/03/research/index/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> research </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>提升</title>
       <link href="/2021/11/03/promote/hello-world/"/>
       <url>/2021/11/03/promote/hello-world/</url>
@@ -71,6 +52,25 @@
       <categories>
           
           <category> promote </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>研究</title>
+      <link href="/2021/11/03/research/index/"/>
+      <url>/2021/11/03/research/index/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> research </category>
           
       </categories>
       
