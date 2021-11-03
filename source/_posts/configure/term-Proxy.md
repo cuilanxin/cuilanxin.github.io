@@ -1,6 +1,6 @@
 ---
 uuid: 3a26c314-2f0d-21b2-f54c-3cf9fee39e3e
-title: 配置终端翻墙
+title: 配置终端代理
 categories: configure
 ---
 配置终端翻墙
@@ -76,4 +76,13 @@ function proxy_on() {
     export https_proxy=$http_proxy
     echo -e "已开启代理"
 }
+```
+
+### 7.小技巧
+
+测试是否成功
+
+```bash
+$ curl https://www.google.com/
+
 ```
