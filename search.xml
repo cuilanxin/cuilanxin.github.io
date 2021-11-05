@@ -4,25 +4,6 @@
   
     
     <entry>
-      <title>科学上网</title>
-      <link href="/2021/11/05/configure/proxy/"/>
-      <url>/2021/11/05/configure/proxy/</url>
-      
-        <content type="html"><![CDATA[<p>配置科学上网 mac 版</p><h2 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h2><h3 id="1-vultr-购买一个服务器"><a href="#1-vultr-购买一个服务器" class="headerlink" title="1.vultr 购买一个服务器"></a>1.vultr 购买一个服务器</h3><p><a href="https://www.vultr.com/">vultr 官网</a></p><ol><li>注册账号</li><li>登录激活账号</li><li>账号充值<br> -. 在页面 Billing </li><li>新建vps服务器</li><li>尽量选择 CentOS 7 X64 因为网上教程多</li><li>点击 Deploy Now</li><li>部署服务器，就是看这个服务器是不是 Running 不是的话点一下</li><li>记下服务器的详细信息 服务器IP、用户名和密码</li></ol><h3 id="2-连接服务器"><a href="#2-连接服务器" class="headerlink" title="2.连接服务器"></a>2.连接服务器</h3><pre><code class="bash">$ ssh root@服务器IP$ # 输入密码</code></pre><h3 id="3-配置ssr"><a href="#3-配置ssr" class="headerlink" title="3.配置ssr"></a>3.配置ssr</h3><p>在进入服务器的终端界面</p><p><strong>1.安装wget</strong></p><pre><code class="bash">$ yum -y install wget</code></pre><p><strong>2.安装ssr</strong></p><pre><code class="bash">$ wget https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh &amp;&amp; chmod x ssr.sh &amp;&amp; bash ssr.sh</code></pre><p><strong>3.配置 ssr</strong> </p><ol><li>安装</li><li>都是中文不多说了 不知道就默认</li><li>安装好后 要记一下配置信息</li></ol><pre><code class="bash">$ bash ssr.sh</code></pre><h3 id="4-使用-Google-加速"><a href="#4-使用-Google-加速" class="headerlink" title="4.使用 Google 加速"></a>4.使用 Google 加速</h3><pre><code class="bash">$ yum -y install wget$ wget –no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh$ chmod +x bbr.sh$ ./bbr.sh</code></pre><h3 id="5-下载-ssr-软件"><a href="#5-下载-ssr-软件" class="headerlink" title="5.下载 ssr 软件"></a>5.下载 ssr 软件</h3><p>按照步骤填写服务器信息，就是刚才在买的服务器中搭建的ssr的配置<br><a href="https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases">mac ssr</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> configure </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>配置终端代理</title>
       <link href="/2021/11/05/configure/term-Proxy/"/>
       <url>/2021/11/05/configure/term-Proxy/</url>
@@ -71,6 +52,25 @@
       <categories>
           
           <category> research </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>科学上网</title>
+      <link href="/2021/11/05/configure/proxy/"/>
+      <url>/2021/11/05/configure/proxy/</url>
+      
+        <content type="html"><![CDATA[<p>配置科学上网 mac 版</p><h2 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h2><h3 id="1-vultr-购买一个服务器"><a href="#1-vultr-购买一个服务器" class="headerlink" title="1.vultr 购买一个服务器"></a>1.vultr 购买一个服务器</h3><p><a href="https://www.vultr.com/">vultr 官网</a></p><ol><li>注册账号</li><li>登录激活账号</li><li>账号充值<br> -. 在页面 Billing </li><li>新建vps服务器</li><li>尽量选择 CentOS 7 X64 因为网上教程多</li><li>点击 Deploy Now</li><li>部署服务器，就是看这个服务器是不是 Running 不是的话点一下</li><li>记下服务器的详细信息 服务器IP、用户名和密码</li></ol><h3 id="2-连接服务器"><a href="#2-连接服务器" class="headerlink" title="2.连接服务器"></a>2.连接服务器</h3><pre><code class="bash">$ ssh root@服务器IP$ # 输入密码</code></pre><h3 id="3-配置ssr"><a href="#3-配置ssr" class="headerlink" title="3.配置ssr"></a>3.配置ssr</h3><p>在进入服务器的终端界面</p><p><strong>1.安装wget</strong></p><pre><code class="bash">$ yum -y install wget</code></pre><p><strong>2.安装ssr</strong></p><pre><code class="bash">$ wget https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh &amp;&amp; chmod x ssr.sh &amp;&amp; bash ssr.sh</code></pre><p><strong>3.配置 ssr</strong> </p><ol><li>安装</li><li>都是中文不多说了 不知道就默认</li><li>安装好后 要记一下配置信息</li></ol><pre><code class="bash">$ bash ssr.sh</code></pre><h3 id="4-使用-Google-加速"><a href="#4-使用-Google-加速" class="headerlink" title="4.使用 Google 加速"></a>4.使用 Google 加速</h3><pre><code class="bash">$ yum -y install wget$ wget –no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh$ chmod +x bbr.sh$ ./bbr.sh</code></pre><h3 id="5-下载-ssr-软件"><a href="#5-下载-ssr-软件" class="headerlink" title="5.下载 ssr 软件"></a>5.下载 ssr 软件</h3><p>按照步骤填写服务器信息，就是刚才在买的服务器中搭建的ssr的配置<br><a href="https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases">mac ssr</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> configure </category>
           
       </categories>
       
