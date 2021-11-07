@@ -4,44 +4,6 @@
   
     
     <entry>
-      <title>git commit</title>
-      <link href="/2021/11/07/promote/git-commit/"/>
-      <url>/2021/11/07/promote/git-commit/</url>
-      
-        <content type="html"><![CDATA[<p>git commit 格式</p><h2 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h2><ul><li>feat - 新功能（feature）</li><li>fix - 修补bug</li><li>docs - 文档（documentation）</li><li>style - 格式（不影响代码运行的变动）</li><li>test - 增加测试</li><li>refactor：重构（即不是新增功能，也不是修改bug的代码变动）</li><li>chore - 构建过程或辅助工具的变动</li><li>revert - 撤销</li><li>close - 关闭 issue</li><li>clean -清理</li></ul><p>labels 规则</p><ul><li>invalid - 未定义, 内容 不规范</li><li>need demo - 需要提供预览链接 </li><li>need update - 需要更新修复问题</li><li>bug - bug</li><li>duplicate - 重复</li><li>enhancement - 新功能</li><li>question - 提问</li><li>wontfix - 不修复的问题</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> promote </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>研究</title>
-      <link href="/2021/11/07/research/index/"/>
-      <url>/2021/11/07/research/index/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> research </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>科学上网</title>
       <link href="/2021/11/07/configure/proxy/"/>
       <url>/2021/11/07/configure/proxy/</url>
@@ -71,6 +33,44 @@
       <categories>
           
           <category> configure </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>git commit</title>
+      <link href="/2021/11/07/promote/git-commit/"/>
+      <url>/2021/11/07/promote/git-commit/</url>
+      
+        <content type="html"><![CDATA[<p>git commit 格式</p><h2 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h2><ul><li>feat - 新功能（feature）</li><li>fix - 修补bug</li><li>docs - 文档（documentation）</li><li>style - 格式（不影响代码运行的变动）</li><li>test - 增加测试</li><li>refactor：重构（即不是新增功能，也不是修改bug的代码变动）</li><li>chore - 构建过程或辅助工具的变动</li><li>revert - 撤销</li><li>close - 关闭 issue</li><li>clean -清理</li></ul><p>labels 规则</p><ul><li>invalid - 未定义, 内容 不规范</li><li>need demo - 需要提供预览链接 </li><li>need update - 需要更新修复问题</li><li>bug - bug</li><li>duplicate - 重复</li><li>enhancement - 新功能</li><li>question - 提问</li><li>wontfix - 不修复的问题</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> promote </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>研究</title>
+      <link href="/2021/11/07/research/index/"/>
+      <url>/2021/11/07/research/index/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> research </category>
           
       </categories>
       
