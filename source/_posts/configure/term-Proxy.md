@@ -2,6 +2,7 @@
 uuid: 3a26c314-2f0d-21b2-f54c-3cf9fee39e3e
 title: 配置终端代理
 categories: configure
+date: 2021-11-03 22:13:00
 ---
 配置终端翻墙
 

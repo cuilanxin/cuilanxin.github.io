@@ -1,6 +1,7 @@
 ---
 title: v2ray 搭建科学上网
 categories: configure
+date: 2021-11-16 22:13:00
 ---
 配置科学上网 mac 版
 
