@@ -4,16 +4,16 @@
   
     
     <entry>
-      <title>v2ray 搭建科学上网</title>
-      <link href="/2021/11/16/configure/proxy-V2ray/"/>
-      <url>/2021/11/16/configure/proxy-V2ray/</url>
+      <title>研究</title>
+      <link href="/2021/11/30/research/index/"/>
+      <url>/2021/11/30/research/index/</url>
       
-        <content type="html"><![CDATA[<p>配置科学上网 mac 版</p><h2 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h2><h3 id="1-购买一个服务器"><a href="#1-购买一个服务器" class="headerlink" title="1. 购买一个服务器"></a>1. 购买一个服务器</h3><p><a href="https://racknerd.com/">racknerd 官网</a></p><ol><li>注册账号</li><li>选择适合自己的价位</li><li>选择自己会用的 linux 系统(本文选用 CentOS SELinux 7 x64)</li></ol><h3 id="2-连接服务器"><a href="#2-连接服务器" class="headerlink" title="2. 连接服务器"></a>2. 连接服务器</h3><pre><code class="bash">$ ssh root@服务器IP$ # 输入密码</code></pre><h3 id="3-配置ssr"><a href="#3-配置ssr" class="headerlink" title="3. 配置ssr"></a>3. 配置ssr</h3><p>在进入服务器的终端界面</p><h3 id="4-安装wget"><a href="#4-安装wget" class="headerlink" title="4. 安装wget"></a>4. 安装wget</h3><p>有的不用安装</p><pre><code class="bash">$ sudo yum -y install wget</code></pre><h3 id="5-关闭防火墙"><a href="#5-关闭防火墙" class="headerlink" title="5. 关闭防火墙"></a>5. 关闭防火墙</h3><pre><code class="bash">$ systemctl stop firewalld</code></pre><h3 id="6-安装-v2ray"><a href="#6-安装-v2ray" class="headerlink" title="6. 安装 v2ray"></a>6. 安装 v2ray</h3><pre><code class="bash">$ bash &lt;(curl -s -L https://git.io/v2ray-setup.sh)</code></pre><h3 id="7-v2ray-命令"><a href="#7-v2ray-命令" class="headerlink" title="7. v2ray 命令"></a>7. v2ray 命令</h3><pre><code class="bash">$ v2ray info # 查看 V2Ray 配置信息$ v2ray link # 生成 V2Ray 配置文件链接$ v2ray qr # 生成 V2Ray 配置二维码链接$ v2ray start # 启动 V2Ray$ v2ray stop # 停止 V2Ray$ v2ray restart # 重启 V2Ray$ v2ray config # 配置</code></pre><h3 id="8-下载-ssr-软件"><a href="#8-下载-ssr-软件" class="headerlink" title="8.下载 ssr 软件"></a>8.下载 ssr 软件</h3><p>按照步骤填写服务器信息，就是刚才在买的服务器中搭建的ssr的配置<br><a href="https://github.com/yanue/V2rayU/releases/tag/3.2.0">mac v2rayU</a></p><p>照着配置就行了都是中文没什么好说的</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       <categories>
           
-          <category> configure </category>
+          <category> 提升 </category>
           
       </categories>
       
@@ -23,16 +23,16 @@
     
     
     <entry>
-      <title>研究</title>
-      <link href="/2021/11/16/research/index/"/>
-      <url>/2021/11/16/research/index/</url>
+      <title>v2ray 搭建科学上网</title>
+      <link href="/2021/11/16/configure/proxy-V2ray/"/>
+      <url>/2021/11/16/configure/proxy-V2ray/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>配置科学上网 mac 版</p><h2 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h2><h3 id="1-购买一个服务器"><a href="#1-购买一个服务器" class="headerlink" title="1. 购买一个服务器"></a>1. 购买一个服务器</h3><p><a href="https://racknerd.com/">racknerd 官网</a></p><ol><li>注册账号</li><li>选择适合自己的价位</li><li>选择自己会用的 linux 系统(本文选用 CentOS SELinux 7 x64)</li></ol><h3 id="2-连接服务器"><a href="#2-连接服务器" class="headerlink" title="2. 连接服务器"></a>2. 连接服务器</h3><pre><code class="bash">$ ssh root@服务器IP$ # 输入密码</code></pre><h3 id="3-配置ssr"><a href="#3-配置ssr" class="headerlink" title="3. 配置ssr"></a>3. 配置ssr</h3><p>在进入服务器的终端界面</p><h3 id="4-安装wget"><a href="#4-安装wget" class="headerlink" title="4. 安装wget"></a>4. 安装wget</h3><p>有的不用安装</p><pre><code class="bash">$ sudo yum -y install wget</code></pre><h3 id="5-关闭防火墙"><a href="#5-关闭防火墙" class="headerlink" title="5. 关闭防火墙"></a>5. 关闭防火墙</h3><pre><code class="bash">$ systemctl stop firewalld</code></pre><h3 id="6-安装-v2ray"><a href="#6-安装-v2ray" class="headerlink" title="6. 安装 v2ray"></a>6. 安装 v2ray</h3><pre><code class="bash">$ bash &lt;(curl -s -L https://git.io/v2ray-setup.sh)</code></pre><h3 id="7-v2ray-命令"><a href="#7-v2ray-命令" class="headerlink" title="7. v2ray 命令"></a>7. v2ray 命令</h3><pre><code class="bash">$ v2ray info # 查看 V2Ray 配置信息$ v2ray link # 生成 V2Ray 配置文件链接$ v2ray qr # 生成 V2Ray 配置二维码链接$ v2ray start # 启动 V2Ray$ v2ray stop # 停止 V2Ray$ v2ray restart # 重启 V2Ray$ v2ray config # 配置</code></pre><h3 id="8-下载-ssr-软件"><a href="#8-下载-ssr-软件" class="headerlink" title="8.下载 ssr 软件"></a>8.下载 ssr 软件</h3><p>按照步骤填写服务器信息，就是刚才在买的服务器中搭建的ssr的配置<br><a href="https://github.com/yanue/V2rayU/releases/tag/3.2.0">mac v2rayU</a></p><p>照着配置就行了都是中文没什么好说的</p>]]></content>
       
       
       <categories>
           
-          <category> research </category>
+          <category> 环境 </category>
           
       </categories>
       
@@ -51,7 +51,7 @@
       
       <categories>
           
-          <category> promote </category>
+          <category> 笔记 </category>
           
       </categories>
       
@@ -70,7 +70,7 @@
       
       <categories>
           
-          <category> configure </category>
+          <category> 环境 </category>
           
       </categories>
       
@@ -89,7 +89,7 @@
       
       <categories>
           
-          <category> configure </category>
+          <category> 环境 </category>
           
       </categories>
       
