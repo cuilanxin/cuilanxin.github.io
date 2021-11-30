@@ -1,7 +1,7 @@
 ---
 uuid: e3eb464a-eb65-831d-b4f0-21b1be8594bd
 title: git commit 
-categories: promote
+categories: 笔记
 date: 2021-11-05 22:13:00
 ---
 git commit 格式

@@ -1,7 +1,7 @@
 ---
 uuid: 3a26c314-2f0d-21b2-f54c-3cf9fee39e3e
 title: 科学上网
-categories: configure
+categories: 环境
 date: 2021-11-02 22:13:00
 ---
 配置科学上网 mac 版
