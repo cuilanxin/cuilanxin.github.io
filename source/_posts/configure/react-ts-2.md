@@ -27,6 +27,8 @@ $  yarn add eslint-plugin-react --dev
 $  yarn add eslint-plugin-typescript --dev
 $  yarn add lint-staged --dev
 $  yarn add prettier --dev
+$  yarn add @commitlint/cli --dev
+$  yarn add commitlint/config-conventional --dev
 ```
 
 # 配置eslint 在项目根目录创建 .eslintrc.json 文件
@@ -90,6 +92,12 @@ $ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 npm run lint-staged
 ```
 
+## 新建根文件 commitlint.config.js
+
+```js
+module.exports = { extends: ['@commitlint/config-conventional'] };
+```
+
 # 配置 package.json
 
 ```json
@@ -108,6 +116,5 @@ npm run lint-staged
   "*.{js,jsx,ts,tsx,less,json}": [
     "prettier --write"
   ]
-},
 }
 ```
