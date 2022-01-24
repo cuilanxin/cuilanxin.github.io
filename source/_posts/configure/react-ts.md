@@ -24,6 +24,7 @@ $  yarn add eslint-plugin-react --dev
 $  yarn add eslint-plugin-prettier --dev
 $  yarn add prettier --dev
 $  yarn add husky --dev
+$  yarn add lint-staged --dev
 ```
 
 # 配置eslint 在项目根目录创建 .eslintrc.json 文件
