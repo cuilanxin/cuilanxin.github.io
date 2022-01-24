@@ -20,7 +20,7 @@
 <meta property="og:description" content="配置 React + ts 搭建基础 react 项目 -1$ npx create-react-app demo  安装依赖$  yarn add @types&#x2F;react-router-dom --dev $  yarn add @typescript-eslint&#x2F;parser --dev $  yarn add babel-eslint --dev $  yarn add eslint -">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-01-24T14:13:00.000Z">
-<meta property="article:modified_time" content="2022-01-24T07:32:42.694Z">
+<meta property="article:modified_time" content="2022-01-24T08:14:37.363Z">
 <meta property="article:author" content="崔兰鑫">
 <meta property="article:tag" content="崔兰鑫, 兰鑫, 崔兰心, 兰心, 杂记, cuilanxin, lanxin">
 <meta name="twitter:card" content="summary">
@@ -175,7 +175,7 @@
   <style>#main article .mdui-card-content .center-block{display:block!important;margin-right:auto!important;margin-left:auto!important}</style>
   <article class="mdui-card mdui-m-b-5">
     <header class="mdui-card-media">
-      <img src="/images/random/material-3.png" style="max-height: 240px;">
+      <img src="/images/random/material-15.png" style="max-height: 240px;">
       <div class="mdui-card-media-covered">
         <div class="mdui-card-primary">
           <div class="mdui-card-primary-title">React-ts</div>
@@ -242,6 +242,8 @@ $  yarn add eslint-plugin-react --dev
 $  yarn add eslint-plugin-typescript --dev
 $  yarn add lint-staged --dev
 $  yarn add prettier --dev
+$  yarn add @commitlint/cli --dev
+$  yarn add commitlint/config-conventional --dev
 </code></pre>
 <h1 id="配置eslint-在项目根目录创建-eslintrc-json-文件"><a href="#配置eslint-在项目根目录创建-eslintrc-json-文件" class="headerlink" title="配置eslint 在项目根目录创建 .eslintrc.json 文件"></a>配置eslint 在项目根目录创建 .eslintrc.json 文件</h1><ol>
 <li>这个是我配置的，也可以在rules自行配置</li>
@@ -293,6 +295,8 @@ $ npx husky add .husky/commit-msg &#39;npx --no-install commitlint --edit &quot;
 
 npm run lint-staged
 </code></pre>
+<h2 id="新建根文件-commitlint-config-js"><a href="#新建根文件-commitlint-config-js" class="headerlink" title="新建根文件 commitlint.config.js"></a>新建根文件 commitlint.config.js</h2><pre><code class="js">module.exports = &#123; extends: [&#39;@commitlint/config-conventional&#39;] &#125;;
+</code></pre>
 <h1 id="配置-package-json"><a href="#配置-package-json" class="headerlink" title="配置 package.json"></a>配置 package.json</h1><pre><code class="json">&#123;
   &quot;scripts&quot;: &#123;
     &quot;lint&quot;: &quot;eslint --ext .ts,.tsx,.js src&quot;,
@@ -308,7 +312,6 @@ npm run lint-staged
   &quot;*.&#123;js,jsx,ts,tsx,less,json&#125;&quot;: [
     &quot;prettier --write&quot;
   ]
-&#125;,
 &#125;
 </code></pre>
 
