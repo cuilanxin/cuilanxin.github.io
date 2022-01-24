@@ -6,7 +6,7 @@ date: 2021-11-05 22:13:00
 ---
 git commit 格式
 
-## git commit 
+# git commit 
 
 * feat - 新功能（feature）
 * fix - 修补bug
