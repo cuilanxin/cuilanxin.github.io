@@ -40,7 +40,7 @@ $  yarn add commitlint/config-conventional --dev
 {
   "parser": "@typescript-eslint/parser",
   "plugins": [
-    "typescript",  "prettier"
+    "@typescript-eslint/no-unused-vars","@typescript-eslint", "prettier"
   ],
   "rules": {
     "no-console": "error",
