@@ -40,7 +40,7 @@ $  yarn add commitlint/config-conventional --dev
 {
   "parser": "@typescript-eslint/parser",
   "plugins": [
-    "@typescript-eslint/no-unused-vars","@typescript-eslint", "prettier"
+    "@typescript-eslint", "prettier"
   ],
   "rules": {
     "no-console": "error",
@@ -48,7 +48,7 @@ $  yarn add commitlint/config-conventional --dev
     "max-lines": ["error", 500],
     "indent": ["error", 2],
     "max-depth": ["error", 3],
-    "no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": "error",
     "no-param-reassign": "error",
     "no-multiple-empty-lines": "error",
     "prettier/prettier": "warn",
