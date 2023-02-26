@@ -15,18 +15,16 @@ $ npx create-react-app demo
 # 安装依赖
 
 ```bash
-$  yarn add @types/react-router-dom --dev
 $  yarn add @typescript-eslint/parser --dev
+$  yarn add @typescript-eslint/eslint-plugin --dev
 $  yarn add babel-eslint --dev
 $  yarn add eslint --dev
-$  yarn add eslint-config-airbnb --dev
-$  yarn add eslint-plugin-import --dev
-$  yarn add eslint-plugin-jsx-a11y --dev
 $  yarn add eslint-plugin-prettier --dev
 $  yarn add eslint-plugin-react --dev
-$  yarn add eslint-plugin-typescript --dev
 $  yarn add lint-staged --dev
 $  yarn add prettier --dev
+$  yarn add typescript --dev
+# 可选
 $  yarn add @commitlint/cli --dev
 $  yarn add commitlint/config-conventional --dev
 ```
@@ -80,16 +78,7 @@ $  yarn add commitlint/config-conventional --dev
 1. [husky 文档](https://typicode.github.io/husky/#/)
 ```bash
 $ npx husky-init && yarn
-$ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
-```
-
-## 在 .husky/pre-commit
-
-```text
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-npm run lint-staged
+$ npx husky add .husky/pre-commit npm run lint-staged
 ```
 
 ## 新建根文件 commitlint.config.js
