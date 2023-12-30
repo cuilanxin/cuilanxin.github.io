@@ -44,3 +44,9 @@ $ # 检查是否成功
 $ node -v
 $ npm -v
 ```
+
+### 双系统时间不一致
+
+```bash
+$ timedatectl set-local-rtc 1
+```
