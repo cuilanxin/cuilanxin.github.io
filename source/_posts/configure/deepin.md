@@ -2,7 +2,7 @@
 uuid: 
 title: deepin 安装node git chrome浏览器
 categories: 环境
-date: 2021-11-16 22:13:00
+date: 
 ---
 deepin 安装node git 浏览器
 
