@@ -79,7 +79,8 @@ $ sudo vi /etc/profile
 
 ```text
 bind '"\e[A": history-search-backward'
-bind '""\e[B": history-search-forward'
-```
-
+bind '"\e[B": history-search-forward'
+bind '"\e[5~": history-search-backward'
+bind '"\e[6~": history-search-backward'
+``` 
 
