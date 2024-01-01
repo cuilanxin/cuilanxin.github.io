@@ -51,3 +51,28 @@ $ npm -v
 ```bash
 $ timedatectl set-local-rtc 1
 ```
+
+### 忽略大小写 
+
+```bash
+$ sudo vi /etc/inputrc
+```
+
+末行追加
+```text
+set completion-ignore-case on
+```
+
+### 查找历史命令
+
+```bash
+$ sudo vi /etc/profile
+```
+
+末行追加
+```text
+bind '"\e[A": history-search-backward'
+bind '""\e[B": history-search-forward'
+```
+
+
