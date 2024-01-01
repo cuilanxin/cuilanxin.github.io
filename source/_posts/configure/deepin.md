@@ -31,10 +31,17 @@ $ sudo dpkg -i 下载的deb包
 $ tar -xf 压缩包
 $ sudo mv 解压的的文件 /opt/node
 $ sudo vi /etc/profile 
-$ # 最后追加以下环境变量
-$ # export NODE_HOME=/opt/node
-$ # export PATH=$PATH:$NODE_HOME/bin
-$ # export NODE_PATH=$NODE_HOME/lib/node_mudules
+```
+
+末行追加环境变量
+
+```text
+export NODE_HOME=/opt/node
+export PATH=$PATH:$NODE_HOME/bin
+export NODE_PATH=$NODE_HOME/lib/node_mudules
+```
+
+```bash
 $ sudo source /etc/profile
 $
 $ # 创建软连接
@@ -59,6 +66,7 @@ $ sudo vi /etc/inputrc
 ```
 
 末行追加
+
 ```text
 set completion-ignore-case on
 ```
@@ -70,6 +78,7 @@ $ sudo vi /etc/profile
 ```
 
 末行追加
+
 ```text
 bind '"\e[A": history-search-backward'
 bind '""\e[B": history-search-forward'
