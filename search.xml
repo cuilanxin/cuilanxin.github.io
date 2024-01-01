@@ -4,44 +4,6 @@
   
     
     <entry>
-      <title>git ssh-key</title>
-      <link href="/2023/12/30/configure/git%20ssh/"/>
-      <url>/2023/12/30/configure/git%20ssh/</url>
-      
-        <content type="html"><![CDATA[<p>配置git ssh</p><h1 id="配置git-ssh"><a href="#配置git-ssh" class="headerlink" title="配置git ssh"></a>配置git ssh</h1><h3 id="1-下载git"><a href="#1-下载git" class="headerlink" title="1. 下载git"></a>1. 下载git</h3><pre><code class="bash">$ sudo apt install git</code></pre><h3 id="2-设置git-config"><a href="#2-设置git-config" class="headerlink" title="2. 设置git config"></a>2. 设置git config</h3><pre><code class="bash">$ git config --global user.name &quot;xxx&quot;$ git config --global user.email &quot;xxx@.com&quot;</code></pre><h3 id="3-生成key"><a href="#3-生成key" class="headerlink" title="3. 生成key"></a>3. 生成key</h3><ol><li>回车到底</li></ol><pre><code class="bash">$ ssh-keygen -t rsa -C &quot;xxx@.com&quot;</code></pre><h3 id="4-复制生成的-ssh-rsa-pub"><a href="#4-复制生成的-ssh-rsa-pub" class="headerlink" title="4. 复制生成的 ssh-rsa,pub"></a>4. 复制生成的 ssh-rsa,pub</h3><ol><li>复制输出内容</li></ol><pre><code class="bash">$ cat ~/.ssh/id_rsa.pub</code></pre><h3 id="5-配置到git"><a href="#5-配置到git" class="headerlink" title="5. 配置到git"></a>5. 配置到git</h3><ol><li>Setting-》SSH and GPG keys -》SSh keys </li><li>title 随便写 </li><li>ssh 就是刚才复制的 id_rsa.pub 内容</li></ol><h3 id="6-问题"><a href="#6-问题" class="headerlink" title="6. 问题"></a>6. 问题</h3><ol><li>没有权限<ul><li>检查email name 是否正确</li></ul></li><li>查看是否配置成功</li></ol><pre><code class="bash">$ ssh -T git@github.com# Hi user.name! You&#39;ve successfully authenticated, but GitHub does #  not provide shell access.</code></pre><ol start="3"><li>如果没有配置成功尝试一下</li></ol><p>ssh-add命令是把专用密钥添加到ssh-agent的高速缓存中,从而提高ssh的认证速度</p><pre><code class="bash">$ ssh-add ~/.ssh/id_rsa</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 环境 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>deepin 安装node git chrome浏览器</title>
-      <link href="/2023/12/30/configure/deepin/"/>
-      <url>/2023/12/30/configure/deepin/</url>
-      
-        <content type="html"><![CDATA[<p>deepin 安装node git 浏览器</p><h1 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h1><h3 id="1-安装git"><a href="#1-安装git" class="headerlink" title="1. 安装git"></a>1. 安装git</h3><pre><code class="bash">$ sudo apt install git</code></pre><h3 id="2-安装chrome"><a href="#2-安装chrome" class="headerlink" title="2. 安装chrome"></a>2. 安装chrome</h3><ol><li>去谷歌浏览器官网下载 </li></ol><pre><code class="bash">$ sudo dpkg -i 下载的deb包</code></pre><h3 id="3-安装node"><a href="#3-安装node" class="headerlink" title="3. 安装node"></a>3. 安装node</h3><ol><li>去node官网下载压缩包</li></ol><pre><code class="bash">$ tar -xf 压缩包$ sudo mv 解压的的文件 /opt/node$ sudo vi /etc/profile $ # 最后追加以下环境变量$ # export NODE_HOME=/opt/node$ # export PATH=$PATH:$NODE_HOME/bin$ # export NODE_PATH=$NODE_HOME/lib/node_mudules$ sudo source /etc/profile$$ # 创建软连接$ sudo ln -s /opt/node/bin/node /usr/local/bin/node$ sudo ln -s /opt/node/bin/npm /usr/local/bin/npm$ $ # 检查是否成功$ node -v$ npm -v</code></pre><h3 id="双系统时间不一致"><a href="#双系统时间不一致" class="headerlink" title="双系统时间不一致"></a>双系统时间不一致</h3><pre><code class="bash">$ timedatectl set-local-rtc 1</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 环境 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>TypeScript type interface区别</title>
       <link href="/2021/12/18/promote/ts--type-interface%E5%8C%BA%E5%88%AB/"/>
       <url>/2021/12/18/promote/ts--type-interface%E5%8C%BA%E5%88%AB/</url>
