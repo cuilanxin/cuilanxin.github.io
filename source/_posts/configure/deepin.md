@@ -1,10 +1,9 @@
 ---
 uuid: d305ec04-dbdc-fd95-f7ce-1dafac12d084
-title: deepin 安装node git chrome浏览器
+title: deepin 开发环境
 categories: 环境
 date: 
 ---
-deepin 安装node git 浏览器
 
 # 安装环境
 
